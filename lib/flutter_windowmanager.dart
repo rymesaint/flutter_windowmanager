@@ -119,4 +119,8 @@ class FlutterWindowManager {
       "flags": flags,
     });
   }
+
+  static Future<bool> hideOverlayWindows() async {
+    return await _channel.invokeMethod("hideOverlayWindows");
+  }
 }
