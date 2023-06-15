@@ -139,6 +139,10 @@ public class FlutterWindowManagerPlugin implements MethodCallHandler, FlutterPlu
         activity.getWindow().clearFlags(flags);
         result.success(true);
         break;
+      case "hideOverlayWindows":
+        activity.getWindow().setHideOverlayWindows(true);
+        result.success(true);
+        break;
       default:
         result.notImplemented();
     }
