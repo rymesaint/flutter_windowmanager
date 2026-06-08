@@ -1,3 +1,11 @@
+## 0.3.0
+
+* Migrate plugin implementation to Kotlin.
+* Support hiding non-system overlay windows using `hideOverlayWindows` (Android 11+ / API 30+).
+* Modernize Android Gradle build configuration and upgrade Gradle to 8.3.
+* Replace deprecated/removed `jcenter()` repository with `mavenCentral()`.
+* Update Dart SDK environment constraints to support Dart 3.
+
 ## 0.2.0
 
 * Finish flutter embedding v2 migration. #17
